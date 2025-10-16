@@ -1,0 +1,42 @@
+/* Not my first css lol */
+
+body {
+    font-family:"Gotham", Helvetica, Arial, sans-serif;
+}
+
+.firstParagraph {
+    color: purple;
+    font-size: 25px;
+    background-color: rgb(11, 216, 11);
+}
+
+ul {
+    border: 2px solid orange;
+    font-size: 18px;
+    color:red;
+}
+
+/* headers */
+div h2.headerTwo {
+    color:brown;
+    font-size:35px;
+    background-color:pink;
+}
+
+div h2.headerTwo p {
+    border:10px solid blue;
+}
+
+div h2#specialHeader p {
+    background-color: rgb(199, 20, 199);
+}
+
+/* lorem */
+.lorem {
+    color:red;
+    font-size: 20px;
+}
+p.lorem {
+    font-size: 32px;
+}
+
