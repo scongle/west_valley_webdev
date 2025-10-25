@@ -1,0 +1,103 @@
+/* Not my first css lol */
+ 
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family:"Gotham", Helvetica, Arial, sans-serif;
+    color:#FFF;
+    background-color:#333;
+}
+/*
+h1 {
+    margin-top:100px;
+}
+*/
+h1 {
+    border-top: 5px solid whitesmoke;
+    border-bottom: 5px solid whitesmoke;
+    padding: 20px;
+    text-align: center;
+    margin: 5% 20%;
+    border-radius: 10px;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color:#99b3fa;
+}
+
+ul#nav li {
+    display:inline-block;
+    width:20%;
+}
+ul#nav li>a {
+    font-size:20px;
+    color:#fff;
+}
+ul#nav li>a.active {
+    color:rgb(255, 162, 162);
+}
+
+ul#nav li>a:hover, a:hover {
+    color:rgb(137, 137, 255);
+}
+
+#container {
+    width:50%;
+    margin:0 auto;
+}
+#content {
+    margin-bottom:100px;
+}
+
+/* home */
+.home img {
+    /* My container is margin:auto - so no need to duplicate it here */
+    width: 100%;
+    box-shadow: 0 0 5px 5px #dddddd;
+}
+.home div.msg {
+    text-align: center;
+    border-radius: 10px 60px;
+    margin: 40px 0 60px 0;
+    padding:10px;
+    background-color: #000; 
+}
+/* About me */
+.aboutme {
+    /*width:55%;*/
+    margin:0 auto;
+}
+
+.aboutme h2 {
+    margin-top:50px;
+}
+.aboutme p {
+    line-height: 22px;
+    padding:30px 50px;
+    border:1px solid #000;
+    background-color:rgb(43, 43, 43);
+    text-shadow:2px 2px 4px #002d68;
+}
+.aboutme img {
+    display:block;
+    margin-top:20px;
+}
+/* contact */
+.contact p {
+    line-height: 22px;
+    padding:30px 50px;
+    border:1px solid #000;
+    background-color:rgb(43, 43, 43);
+    text-shadow:2px 2px 4px #002d68;
+}
+
+
