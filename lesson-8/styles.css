@@ -1,0 +1,58 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:"Gotham", Helvetica, Arial, sans-serif;
+    background: no-repeat center top url("media/viet-bg.jpeg") black;
+}
+
+#container {
+    width:70%;
+    margin:0 auto;
+}
+
+h1 {
+    text-align: center;
+    height: 10%;
+    width: 100%;  
+}
+h3 {
+    padding:20px 30px;
+    border:1px solid #fff;
+    border-radius: 6px;
+    opacity:0.7;
+    width:50%;
+    margin:0 auto;
+    text-align:center;
+    background-color:#5e5e5e;
+    color:#fff;
+    margin-bottom:30px;
+    font-size:16px;
+}
+
+.item img {
+    max-width:32%;
+    filter: drop-shadow(3px 2px 2px #000000);
+    padding:3px;
+}
+.item>img:hover {
+    filter: drop-shadow(1px 1px 2px #c9c9c9);
+}
+
+@media (width < 1286px) {
+    #container {
+        width:90%;
+    }
+}
+@media (width < 992px) {
+    .item img {
+        max-width:48%;
+    } 
+}
+@media (width < 768px) {
+    #container {
+        width:100%; 
+    }
+}
+
