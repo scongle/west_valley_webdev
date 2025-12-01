@@ -1,0 +1,192 @@
+
+body {
+    font-family:"Gotham", Helvetica, Arial, sans-serif;
+    color:#FFF;
+    background-color:#7d5c5c;
+    margin:0;
+    padding:0;
+}
+a {
+    text-decoration: none;
+    color:#FFF;
+    font-size:11pt;
+}
+a:hover {
+    color:#91c381;
+}
+#container {
+    width:50%;
+    margin:0 auto;
+    padding-top:40px;
+}
+div.box a {
+    color:#91c381;
+}
+/* nav stuff */
+#nav-container {
+    padding:20px 0;
+    background-color:#000;
+    box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.5);
+}
+ul#nav {
+    list-style-type: none;
+    width:50%;
+    margin:0 auto;
+    padding-left:0;
+}
+
+ul#nav li {
+    display:inline-block;
+    width:130px;
+}
+ul#nav li>a {
+    font-size:16px;
+}
+ul#nav li>a.active {
+    color:#91c381;
+}
+
+h1 {
+    position:absolute;
+    left:-1000000px;
+}
+
+/* index page specific */
+.home div.box {
+    margin-top:40px;
+}
+#overlay {
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10000000;
+    transition: opacity 1.5s, transform 4s;
+}
+#overlay.fade {
+    opacity:0;
+}
+#spaceship {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    transition: opacity 1.5s, transform 4s;
+    margin: auto;
+    margin-top: auto;
+    margin-top: 18%;
+    background:url(images/spaceship2.png) top left no-repeat;
+    opacity:0;
+}
+#spaceship.show {
+    opacity:1;
+}
+#spaceship.zoom {
+    transform:scale(3);
+    opacity:0;
+}
+#alien-container {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    transition: opacity 1.5s, transform 4s;
+    margin: auto;
+    margin-top: auto;
+    margin-top: 18%;
+}
+div.box {
+    line-height: 22px;
+    padding:30px 50px;
+    border:1px solid #91c381;
+    background-color:rgb(43, 43, 43);
+    text-shadow:2px 2px 4px #002d68;
+    margin-bottom:40px;
+}
+h3 {
+    text-align: center;
+}
+/* About me */
+.aboutme {
+    margin:0 auto;
+}
+
+.aboutme h2 {
+    margin-top:50px;
+}
+.aboutme img {
+    display:block;
+    margin-top:20px;
+}
+
+/*simple mobile menu */
+.dropdown {
+  position: relative;
+  display: none;
+}
+
+.dropdown-btn {
+  padding: 10px 15px;
+  background: #000000;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-btn img {
+    width:20px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: white;
+  min-width: 160px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-content a:hover {
+  background: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* media queries should work at all sizes when the browser is resized
+    not just specific to mobile media sizes */
+@media (width < 1340px) {
+    ul#nav li {
+        width:100px;
+    }
+}
+@media (width < 1286px) {
+    #container {
+        width:90%;
+    }
+}
+@media (width < 1040px) {
+    ul#nav li {
+        width: 90px;
+    }
+}
+@media (width < 940px) {
+    ul#nav {
+        display:none;
+    }
+    .dropdown {
+        display: inline-block;
+    }
+}
+@media (width < 768px) {
+    #container {
+        width:100%; 
+    }
+}
